@@ -82,7 +82,7 @@ def sequence_score(line, angle):
     g4_score_c = math.prod(c_ls) / sample_len
 
     sin_of_a_t = math.sin(math.radians(angle)) * a_t_value
-    final_score = g_c_value - sin_of_a_t
+    final_score = g_c_value + sin_of_a_t
 
     g4_final_score_g = final_score * g4_score_g
     g4_final_score_c = final_score * g4_score_c
